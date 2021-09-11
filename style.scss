@@ -1,0 +1,232 @@
+$primary: #fff;
+$secondary: #eee;
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+header .container {
+  padding: 1rem 0;
+  background: $primary;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    height: 4rem;
+  }
+  nav a {
+    text-decoration: none;
+    color: #888;
+    padding: 0 1rem;
+    span {
+      color: rgb(7, 7, 7);
+      font-weight: bold;
+    }
+  }
+  nav a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
+
+main {
+  background: $secondary;
+  .intro {
+    padding-top: 2rem;
+    margin: 0 auto;
+    text-align: center;
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      padding: 1rem;
+      font-size: larger;
+    }
+  }
+}
+
+.gallery {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .photo {
+    width: calc(25% - 1rem);
+    padding: 0.5rem;
+    overflow: hidden;
+    img {
+      display: block;
+      width: 100%;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    span {
+      display: flex;
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+  .photo:hover img {
+    transform: scale(1.1);
+  }
+}
+
+// pridetas kodas nuo cia
+
+.preview-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  background: #fff;
+  max-width: 500px;
+  width: 100%;
+  height: 95%;
+  z-index: 5;
+  opacity: 0;
+  pointer-events: none;
+  border-radius: 3px;
+  padding: 0 5px 5px 5px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+.preview-box.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+  transition: all 0.3s ease;
+}
+.preview-box .details {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px 12px 10px;
+  justify-content: space-between;
+}
+.preview-box .details .title {
+  display: flex;
+  font-size: 18px;
+  font-weight: 400;
+}
+.details .title p {
+  margin: 0 5px;
+}
+.details .title p.current-img {
+  font-weight: 500;
+}
+.details .icon {
+  color: #f33952;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.preview-box .image-box {
+  display: flex;
+  width: 100%;
+  height: 93%;
+  position: relative;
+}
+
+.image-box .slide {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+  height: 50px;
+  width: 60px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 3px;
+}
+.slide.prev {
+  left: 0px;
+}
+.slide.next {
+  right: 0px;
+}
+.image-box img {
+  width: 100%;
+  border-radius: 0 0 3px 3px;
+}
+
+// Iki cia
+
+.more {
+  background: $primary;
+  margin-top: 3rem;
+  text-align: center;
+  padding: 2rem;
+  font-weight: bold;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+footer {
+  background: $secondary;
+  text-align: center;
+  padding: 2rem;
+  color: #888;
+  .icons {
+    margin-bottom: 1rem;
+  }
+  a {
+    padding: 0.5rem;
+    color: #888;
+  }
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  .pageimg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    img {
+      width: 100%;
+    }
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .photo {
+      width: 100%;
+    }
+  }
+}

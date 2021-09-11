@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Gallery</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/00b3696e59.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <img
+          src="https://www.freepnglogos.com/uploads/photography-logo-png/rules-for-acquiring-effective-photography-logo-design-27.png"
+          alt="camera"
+        />
+
+        <nav class="topnav" id="myTopnav">
+          <a href="index.html"><span>HOME</span></a>
+          <a href="about.html">ABOUT ME</a>
+          <a href="portfolio.html">PORTFOLIO</a>
+          <a href="blog.html">BLOG</a>
+          <a href="contacts.html">CONTACTS</a>
+          <a
+            href="javascript:void(0);"
+            style="font-size: 1rem"
+            class="icon"
+            onclick="mobileMenu()"
+            >&#9776;</a
+          >
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="intro">
+          <h1>Travel &#167; Nature Photographer</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed fugiat
+            dolorum eligendi harum dolorem vel quaerat sunt, unde laborum ab
+            praesentium. Voluptatum placeat autem ut, sint soluta et explicabo
+            sapiente!
+          </p>
+        </div>
+        <section>
+          <div class="gallery">
+            <div class="photo">
+              <span
+                ><img
+                  src="https://images.unsplash.com/photo-1554151228-14d9def656e4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGVyc29ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"
+                  alt="1"
+              /></span>
+            </div>
+            <div class="photo">
+              <span
+                ><img
+                  src="https://images.pexels.com/photos/1933873/pexels-photo-1933873.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                  alt="2"
+              /></span>
+            </div>
+            <div class="photo">
+              <span
+                ><img
+                  src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHBlcnNvbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80"
+                  alt="3"
+              /></span>
+            </div>
+            <div class="photo">
+              <span
+                ><img
+                  src="https://images.pexels.com/photos/4058316/pexels-photo-4058316.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                  alt="4"
+              /></span>
+            </div>
+            <div class="photo">
+              <span
+                ><img
+                  src="https://images.pexels.com/photos/3310694/pexels-photo-3310694.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                  alt="5"
+              /></span>
+            </div>
+            <div class="photo">
+              <span
+                ><img
+                  src="https://images.pexels.com/photos/1820934/pexels-photo-1820934.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                  alt="6"
+              /></span>
+            </div>
+            <div class="photo">
+              <span
+                ><img
+                  src="https://images.pexels.com/photos/1800456/pexels-photo-1800456.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                  alt="7"
+              /></span>
+            </div>
+            <div class="photo">
+              <span
+                ><img
+                  src="https://images.pexels.com/photos/3772771/pexels-photo-3772771.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                  alt="8"
+              /></span>
+            </div>
+            <div class="photo">
+              <span
+                ><img
+                  src="https://images.pexels.com/photos/4064342/pexels-photo-4064342.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                  alt="9"
+              /></span>
+            </div>
+            <div class="photo">
+              <span
+                ><img
+                  src="https://images.pexels.com/photos/4096445/pexels-photo-4096445.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                  alt="10"
+              /></span>
+            </div>
+            <div class="photo">
+              <span
+                ><img
+                  src="https://images.pexels.com/photos/598917/pexels-photo-598917.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                  alt="11"
+              /></span>
+            </div>
+            <div class="photo">
+              <span
+                ><img
+                  src="https://images.pexels.com/photos/775358/pexels-photo-775358.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                  alt="12"
+              /></span>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section>
+        <div class="more"><a href="portfolio.html">LOAD MORE WORKS..</a></div>
+        <div class="preview-box">
+          <div class="details">
+            <span class="title"
+              >Image
+              <p class="current-img"></p>
+              of
+              <p class="total-img"></p
+            ></span>
+            <span class="icon fas fa-times"></span>
+          </div>
+          <div class="image-box">
+            <div class="slide prev">
+              <i class="fas fa-chevron-circle-left"></i>
+            </div>
+            <div class="slide next">
+              <i class="fas fa-chevron-circle-right"></i>
+            </div>
+            <img src="" alt="" />
+          </div>
+        </div>
+        <div class="shadow"></div>
+      </section>
+    </main>
+    <footer>
+      <div class="icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-pinterest"></i></a>
+      </div>
+      2021 &copy; Design by Tomas. All rights reserved.
+    </footer>
+  </body>
+</html>
